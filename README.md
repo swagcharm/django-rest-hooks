@@ -1,6 +1,18 @@
 [![Travis CI Build](https://img.shields.io/travis/zapier/django-rest-hooks/master.svg)](https://travis-ci.org/zapier/django-rest-hooks)
 [![PyPI Download](https://img.shields.io/pypi/v/django-rest-hooks.svg)](https://pypi.python.org/pypi/django-rest-hooks)
 [![PyPI Status](https://img.shields.io/pypi/status/django-rest-hooks.svg)](https://pypi.python.org/pypi/django-rest-hooks)
+
+## What's new in this fork?
+- Fixed compatibility issues with Django 4.1
+
+Uses:
+
+```python
+hook_event = Signal()
+raw_hook_event = Signal()
+hook_sent_event = Signal()
+```
+
 ## What are Django REST Hooks?
 
 
