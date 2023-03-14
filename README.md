@@ -2,13 +2,27 @@
 [![PyPI Download](https://img.shields.io/pypi/v/django-rest-hooks.svg)](https://pypi.python.org/pypi/django-rest-hooks)
 [![PyPI Status](https://img.shields.io/pypi/status/django-rest-hooks.svg)](https://pypi.python.org/pypi/django-rest-hooks)
 
+## What's new in this fork?
+- Fixed compatibility issues with Django 4.1
+
+Uses:
+
+```python
+hook_event = Signal()
+raw_hook_event = Signal()
+hook_sent_event = Signal()
+```
+
+instead of `providing_args` on the `Signal` class constructor.
+
+
 ## What are Django REST Hooks?
 
 
 REST Hooks are fancier versions of webhooks. Traditional webhooks are usually
 managed manually by the user, but REST Hooks are not! They encourage RESTful
 access to the hooks (or subscriptions) themselves. Add one, two or 15 hooks for
-any combination of event and URLs, then get notificatied in real-time by our
+any combination of event and URLs, then get a notification in real-time by our
 bundled threaded callback mechanism.
 
 The best part is: by reusing Django's great signals framework, this library is
